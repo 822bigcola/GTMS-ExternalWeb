@@ -78,7 +78,7 @@ function ReadExcel() {
 
     try {
       // 🚀 gọi API backend
-      const res = await fetch("http://localhost:5000/api/artikel");
+      const res = await fetch("http://192.168.1.82:5000/api/artikel");
 
       if (!res.ok) {
         throw new Error("API lỗi");
@@ -165,7 +165,7 @@ function ReadExcel() {
       return;
     }
     try {
-      const res = await fetch("http://localhost:5000/api/buchung", {
+      const res = await fetch("http://192.168.1.82:5000/api/buchung", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
