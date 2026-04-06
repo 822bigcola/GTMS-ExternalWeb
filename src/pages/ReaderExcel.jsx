@@ -118,7 +118,7 @@ function ReadExcel() {
           return (
             normalize(item.Condition) === normalize(condition) &&
             normalize(item.Lagerort) === normalize(lagerort) &&
-            normalize(item.Kostentraeger) === normalize(line)
+            normalize(item.Kostengruppe) === normalize(line)
           );
         });
 
